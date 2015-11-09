@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+
+    "name": "LocalHorst",
+    "description": "Custom Startpage and Newtabpage",
+    "author": "Bernd Busse",
+    "version": "0.1",
+
+    "permissions": [
+        "management"
+    ],
+    "chrome_url_overrides": {
+        "newtab": "localhorst.xhtml"
+    },
+    "web_accessible_resources": [
+        "config.json"
+    ]
+}
