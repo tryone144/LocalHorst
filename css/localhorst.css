@@ -1,0 +1,135 @@
+/*
+ * LOCALHORST
+ * CSS rules for startpage
+ *
+ * file: localhorst.css
+ * v0.1 / 2015.11.09
+ *
+ * (c) 2015 Bernd Busse
+ */
+
+/* COLORS:
+ *   background: #343A41
+ *   Foreground: #2E94E9
+ *
+ *   Blue Light: #51A0E0
+ *   Blue Dark:  #2A6DA6
+ *
+ *   Grey Light: #7D8389
+ *   Grey Dark:  #3F464D
+ */
+
+/* Global Style */
+body {
+    font-family: "Source Code Pro", "Ubuntu Mono", Courier, monospace;
+    font-size: 11pt;
+    color: #2E94E9;
+    background-color: #1F242D;
+}
+
+#pageheader {
+    font-size: 40pt;
+    text-align: center;
+    text-shadow: 2px 2px 0 #343A41;
+}
+
+/* Link apperance */
+a {
+    color: #2A6DA6;
+    text-decoration: none;
+    -webkit-transition-duration: 200ms;
+    transition-duration: 200ms;
+}
+
+a:hover {
+    color: #FFFFFF;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+/* Spacing */
+.hspace {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 2em;
+}
+
+/* Box Container */
+.hbox_container {
+    padding: 0 3%;
+    margin: 5px 0;
+    display: -webkit-box;
+}
+
+.boxcontainer {
+}
+
+.buttoncontainer {
+    text-align: center;
+    display: block;
+}
+
+/* Search Box */
+form.search {
+    margin: auto;
+    display: block;
+}
+
+.search input[type=search] {
+    border: 1px solid red;
+    padding: 5px;
+    height: 32px;
+    width: 32em;
+    vertical-align: top;
+    display: inline-block;
+}
+
+/* Search Button */
+button.searchbutton {
+    font-size: 18pt;
+    border: 1px solid red;
+    margin-left: -10px;
+    height: 32px;
+    width: 42px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+/* Link Boxes */
+.referencebox {
+    background-color: #343A41;
+    padding: 3px;
+    margin: 5px;
+    -webkit-box-flex: 1;
+}
+
+.referencebox h3 {
+    color: #2A6DA6;
+    border-bottom: 2px solid #7D8389;
+    margin: 0 10px 5px 0;
+}
+
+h3 .text {
+    color: #EEE;
+}
+
+.referencebox a {
+    margin-left: 1em;
+}
+
+/* Link Buttons */
+.referencebutton {
+    text-align: center;
+    border: 1px solid #2A6DA6;
+    padding: 0.5em;
+    margin: 5px;
+    width: 20%;
+    display: inline-block;
+}
+
+.referencebutton:hover {
+    background-color: #343A41;
+    border-color: #7D8389;
+}
+
