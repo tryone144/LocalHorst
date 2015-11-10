@@ -1,9 +1,9 @@
 /*
  * LOCALHORST
- * CSS rules for startpage
+ * CSS rules for localhorst startpage
  *
- * file: localhorst.css
- * v0.1 / 2015.11.09
+ * file: css/localhorst.css
+ * v0.1 / 2015.11.10
  *
  * (c) 2015 Bernd Busse
  */
@@ -31,6 +31,7 @@ body {
     font-size: 40pt;
     text-align: center;
     text-shadow: 2px 2px 0 #343A41;
+    cursor: default;
 }
 
 /* Link apperance */
@@ -42,9 +43,13 @@ a {
 }
 
 a:hover {
-    color: #FFFFFF;
+    color: #FFF;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
+}
+
+a:focus {
+    outline: none;
 }
 
 /* Spacing */
@@ -76,24 +81,69 @@ form.search {
     display: block;
 }
 
-.search input[type=search] {
-    border: 1px solid red;
-    padding: 5px;
+.search input[type=text] {
+    color: #2A6DA6;
+    font-size: 14pt;
+    background: none;
+    border: 1px solid #2A6DA6;
+    border-radius: 1px 0 0 1px;
+    padding-left: 10px;
     height: 32px;
-    width: 32em;
+    width: 28em;
     vertical-align: top;
     display: inline-block;
+    box-sizing: border-box;
+    -webkit-transition-duration: 200ms;
+    transition-duration: 200ms;
+}
+
+.search input[type=text]:hover {
+    color: #FFF;
+    background-color: #343A41;
+    border-color: #7D8389;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.search input[type=text]:focus,
+.search input[type=text]:active {
+    color: #FFF;
+    background-color: #343A41;
+    border-color: #7D8389;
+    border: 1px solid #7D8389;
+    border-radius: 1px 0 0 1px;
+    outline: none;
 }
 
 /* Search Button */
 button.searchbutton {
     font-size: 18pt;
-    border: 1px solid red;
+    color: #2A6DA6;
+    background: none;
+    border: 1px solid #2A6DA6;
+    border-radius: 0 1px 1px 0;
+    box-shadow: none;
     margin-left: -10px;
     height: 32px;
     width: 42px;
     vertical-align: top;
     display: inline-block;
+    cursor: pointer;
+    -webkit-transition-duration: 200ms;
+    transition-duration: 200ms;
+}
+
+button.searchbutton:hover {
+    color: #FFF;
+    background-color: #343A41;
+    border-color: #7D8389;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+button.searchbutton:focus {
+    border-color: #7D8389;
+    outline: none;
 }
 
 /* Link Boxes */
@@ -108,6 +158,7 @@ button.searchbutton {
     color: #2A6DA6;
     border-bottom: 2px solid #7D8389;
     margin: 0 10px 5px 0;
+    cursor: default;
 }
 
 h3 .text {
@@ -116,6 +167,10 @@ h3 .text {
 
 .referencebox a {
     margin-left: 1em;
+}
+
+.referencebox a:focus {
+    color: #7D8389;
 }
 
 /* Link Buttons */
@@ -133,3 +188,6 @@ h3 .text {
     border-color: #7D8389;
 }
 
+.referencebutton:focus {
+    border-color: #7D8389;
+}
