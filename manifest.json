@@ -5,6 +5,12 @@
     "description": "Custom Startpage and Newtabpage",
     "author": "Bernd Busse",
     "version": "0.1",
+    "icons": {
+        "16": "localhorst-16.png",
+        "32": "localhorst-32.png",
+        "48": "localhorst-48.png",
+        "128": "localhorst-128.png"
+    },
 
     "permissions": [
         "management"
@@ -13,6 +19,6 @@
         "newtab": "localhorst.xhtml"
     },
     "web_accessible_resources": [
-        "config.json"
+        "localhorst-32.png"
     ]
 }

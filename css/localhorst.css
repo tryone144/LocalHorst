@@ -8,23 +8,12 @@
  * (c) 2015 Bernd Busse
  */
 
-/* COLORS:
- *   background: #343A41
- *   Foreground: #2E94E9
- *
- *   Blue Light: #51A0E0
- *   Blue Dark:  #2A6DA6
- *
- *   Grey Light: #7D8389
- *   Grey Dark:  #3F464D
- */
-
 /* Global Style */
 body {
     font-family: "Source Code Pro", "Ubuntu Mono", Courier, monospace;
     font-size: 11pt;
     color: #2E94E9;
-    background-color: #1F242D;
+    background-color: #202426;
 }
 
 #pageheader {
